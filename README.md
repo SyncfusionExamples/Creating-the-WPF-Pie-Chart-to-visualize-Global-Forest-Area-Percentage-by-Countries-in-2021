@@ -7,7 +7,7 @@ A WPF Pie Chart is a circular graphical representation that divides data into sl
 It is commonly used for illustrating percentages or parts of a whole in an easy-to-understand manner, with each slice's size corresponding to its value or percentage within the total dataset.
 The chart can be customized in terms of colors, labels, and interactions to enhance data visualization and user experience.
 
-In this sample, We customize the following Properties.
+In this sample, we customize the following Properties.
 * Data labels.
 * Legend.
 * Palette.
