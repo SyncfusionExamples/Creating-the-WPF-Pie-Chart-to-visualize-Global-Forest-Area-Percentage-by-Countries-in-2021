@@ -16,7 +16,7 @@
         <local:Convertor x:Key="convertor"/>
         <local:VisibilityConverter x:Key="VisibilityCOnvertor"/>
         <DataTemplate x:Key="adornmentTemplate">
-            <StackPanel Orientation="Vertical" Margin="10">
+            <StackPanel Orientation="Vertical" Margin="5">
                 <Image Source="{Binding Item.Country, Converter={StaticResource convertor}}" Width="20" Height="20" Margin="0,0,0,4"/>
                 <TextBlock Margin="0,0,0,4"  FontSize="14" Foreground="Black" FontFamily="Arial" FontWeight="Thin"  Text="{Binding Item.Country}" Visibility="{Binding Item.Country, Converter={StaticResource VisibilityCOnvertor}}" >
 
@@ -79,14 +79,26 @@
 
             </syncfusion:SfChart.Header>
 
-            <syncfusion:PieSeries ItemsSource="{Binding ForestDatas}"  ExplodeOnMouseClick="True" ExplodeIndex="7"
-                                  XBindingPath="Country"  ConnectorType="Line"
-                                  YBindingPath="Value" StartAngle="-120" EndAngle="240" EnableSmartLabels="False" Palette="GreenChrome" StrokeThickness="1" Stroke="#ECF3F6"
-                                  LabelPosition="Outside" >
+            <syncfusion:PieSeries ItemsSource="{Binding ForestDatas}" 
+                          ExplodeOnMouseClick="True" 
+                          ExplodeIndex="7"
+                          XBindingPath="Country"  
+                          YBindingPath="Value" 
+                          StartAngle="-120" 
+                          EndAngle="240" 
+                          EnableSmartLabels="False" 
+                          Palette="GreenChrome" 
+                          StrokeThickness="0.5" 
+                          Stroke="White"
+                          LabelPosition="Outside">
 
                 <syncfusion:PieSeries.AdornmentsInfo>
-                    <syncfusion:ChartAdornmentInfo   LabelPosition="Inner"  SegmentLabelContent ="LabelContentPath"  LabelTemplate="{StaticResource adornmentTemplate}"
-                                                    ShowLabel="True">
+                    <syncfusion:ChartAdornmentInfo LabelPosition="Inner" 
+                                           ShowConnectorLine="True" 
+                                           HighlightOnSelection="True"  
+                                           SegmentLabelContent="LabelContentPath"  
+                                           LabelTemplate="{StaticResource adornmentTemplate}"
+                                           ShowLabel="True">
 
                     </syncfusion:ChartAdornmentInfo>
                 </syncfusion:PieSeries.AdornmentsInfo>
