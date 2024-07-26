@@ -13,4 +13,4 @@ In this sample, we customize the following Properties.
 * Palette.
 * Header.
 
-for more details on the step - by - step procedure, refer to the blog of global forest area percentage by countries in 2021.
+for more details on the step - by - step procedure, refer to the blog of [global forest area percentage by countries in 2021](https://www.syncfusion.com/blogs/post/wpf-pie-chart-global-forest-area).
